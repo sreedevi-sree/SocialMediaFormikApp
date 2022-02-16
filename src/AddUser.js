@@ -78,7 +78,8 @@ export function AddUser() {
             name: values.name,
             pic: values.pic
           };
-
+if(errors.pic || errors.name)
+  return
           //  add user details to api and For add data know these three steps:
           fetch("https://618fa736f6bf4500174849a7.mockapi.io/user/",{
             method:"POST",

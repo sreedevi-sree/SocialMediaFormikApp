@@ -26,7 +26,7 @@ export function UserList() {
     fetch("https://618fa736f6bf4500174849a7.mockapi.io/user/" + id,{
       method:"DELETE"
     }).then((data)=>data.json())
-    .then(()=>getUsers)
+    .then(()=>getUsers())
   };
  
 
